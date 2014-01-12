@@ -1,0 +1,11 @@
+{
+  "name": "webcam-capture",
+  "version": "0.0.1",
+  "description": "Capture frames from your webcam.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zach Carter <zack.carter@gmail.com> (http://zaa.ch)",
+  "license": "MIT"
+}
