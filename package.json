@@ -2,6 +2,10 @@
   "name": "webcam-capture",
   "version": "0.0.1",
   "description": "Capture frames from your webcam.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zaach/node-webcam-capture.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
