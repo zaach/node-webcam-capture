@@ -10,7 +10,7 @@ Cheers,
 ## Example
 
     var capture = require('webcam-capture');
-    var spawn = capture({ stdio: [null, process.stdin, null] });
+    var spawn = capture({ stdio: [null, process.stdout, null] });
     // shortcut to write to a file
     // var spawn = capture({ out: 'me.jpg' });
 
