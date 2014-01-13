@@ -4,13 +4,14 @@ const path = require('path');
 const executable = path.join(__dirname, 'build', 'Release', 'capture');
 
 function capture(options) {
-  const out = options.out;
+  const camera = spawn(executable, [], options);
 
-  if (out) {
-    options.stdio = [null, fs.openSync(path.resolve(out), 'w'), null];
+  if (options.out) {
+    var image = fs.createWriteStream(path.resolve(options.out), {encoding: 'binary'});
+    camera.stdout.pipe(image);
   }
 
-  return spawn(executable, [], options);
+  return camera;
 }
 
 module.exports = capture;
